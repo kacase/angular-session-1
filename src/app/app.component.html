@@ -169,7 +169,7 @@
 </div>
 
 
-<h3>Exercise 4.2 - Custom Pipe</h3>
+<h3>Exercise 5.2 - Custom Pipe</h3>
 
 <p>In this exercise we build our own custom pipe. I already ran <code>ng generate pipe custom</code>, which created the
 	file <code>custom.pipe.ts</code> and imports and declares it in the <code>app.module.ts</code>. Below you can find
@@ -180,11 +180,22 @@
 	{{fileSizes[4]}}
 </p>
 
+<p>
+	As this is the last question of this session, it will be a bit harder than the previous ones. We will need to
+	combine what we have learned so far.
+</p>
+
+<p>Online we have found a handy <a
+		href="https://stackoverflow.com/questions/15900485/correct-way-to-convert-size-in-bytes-to-kb-mb-gb-in-javascript/18650828#18650828">answer
+		on stackoverflow</a>, that gives us a function which turns the byte count into a readable string. </p>
+
+<ol>
+	<li>make sure the custom pipe returns the right string using the function from stackoverflow</li>
+	<li>use the parameter to define how many decimals the returned string should have, defaulting to 2</li>
+	<li>use ngFor in combination with the custom pipe to list the file sizes nicely formatted below</li>
+</ol>
 <div class="exercise">
-	<!-- Exercise 2.2 Add Property binding to class.special-offer to each of the divs below.-->
-	<h4>Current Offers:</h4>
-	<ul>
-		<li>{{offers[0].name}}: {{offers[0].specialOffer}}</li>
-	</ul>
+	<!-- Exercise 5.2 show the file sizes-->
+	<h4>File Sizes:</h4>
 
 </div>
