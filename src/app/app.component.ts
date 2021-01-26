@@ -49,6 +49,15 @@ export class AppComponent {
   // Exercise 4.2
   // reuse the array from Value 2.2
 
+  // Exercise 5.1
+  // reuse the value from 1.3
+
+  // Exercise 5.2
+  // returns a random file size
+  randomFileSize():number{
+    return Math.floor(Math.random() * 5e+15) 
+  }
+
   // Constructor
   constructor() {
     setInterval(() => {
