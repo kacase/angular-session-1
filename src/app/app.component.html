@@ -153,17 +153,19 @@
 
 <p>In this example we are going to use a few built-in pipes to modify how some values are rendered in the DOM. In
 	exercise 1.3 you used expressions to show the variable <code>now</code>. Here we ask you to again use an expression,
-	but this time to combine the variable with a the date pipe to show three alternative views of the variable:</p>
-<!-- <ul>
-  <li>formatted date according to locale (pipe without parameters)</li>
-  <li>the weekday of the date</li>
-
-</ul> -->
-
-
+	but this time to combine the variable with a the date pipe to show three alternative views of the variable:
+</p>
+<ul>
+	<li>formatted date according to locale (pipe without parameters)</li>
+	<li>the weekday of the date</li>
+	<li>the time, am/pm and timezone</li>
+</ul>
+<p>
+	If you are unsure, refer to <a href="https://angular.io/api/common/DatePipe">the DatePipe documentation</a>.
+</p>
 <div class="exercise">
 	<!-- Allow users to toggle the following paragraph using *ngIf  -->
-	{{now | date}}
+	{{now | date:"EEEE"}}
 </div>
 
 
