@@ -175,7 +175,9 @@
 	file <code>custom.pipe.ts</code> and imports and declares it in the <code>app.module.ts</code>. Below you can find
 	an unordered list
 	However, the pipe currently returns only an empty string.
-	Imagine you have a file of a random size {{randomFileSize()}}
+	Imagine we have a few files each with a different size in bytes. We have an array called <code>fileSizes</code> that
+	contains the size of each file in bytes. However, bytes are not very readable, when the files get large: e.g:
+	{{fileSizes[4]}}
 </p>
 
 <div class="exercise">

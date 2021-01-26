@@ -53,10 +53,8 @@ export class AppComponent {
   // reuse the value from 1.3
 
   // Exercise 5.2
-  // returns a random file size
-  randomFileSize():number{
-    return Math.floor(Math.random() * 5e+15) 
-  }
+  // array of file sizes
+  fileSizes = [10, 4e5, 1.2e7, 8e9, 7e11, 5.5e13, 7.4e15, 2.9e17];
 
   // Constructor
   constructor() {
