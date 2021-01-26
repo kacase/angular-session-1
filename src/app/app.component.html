@@ -1,0 +1,183 @@
+<!-- Introduction -->
+<markdown [src]="'assets/00_introduction.md'" lineNumbers></markdown>
+
+<!-- Section 1 -->
+
+<h2>1. Interpolation</h2>
+
+<!-- Exercise 1.1 -->
+<h3>Excercise 1.1</h3>
+<p>
+	The component contains a property storing the name of the currently logged in
+	user.
+</p>
+<code>currentUser:String = "Mr. Pink"</code>
+<p>
+	Show the current value of the variable below by using interpolation.
+</p>
+
+<!-- Insert Answer for Exercise 1.1 -->
+<div class="exercise">
+	The current user is:
+	<!---Username Here-->
+</div>
+
+<!-- Exercise 1.2 -->
+<h3>Exercise 1.2</h3>
+<p>In the compoent, a variable <code>countInBasket</code> is set. A method <code>getStock()</code> which returns the
+	count of items in stock is also available.</p>
+<p>Use expressions to display the items remaining in stock, if all items in the basket were to be purchased.</p>
+
+<!-- Insert Answer for Exercise 1.2 -->
+<div class="exercise">
+	Items in stock after purchase:
+	<!---Remaining Stock Here-->
+</div>
+
+
+
+<!-- Exercise 1.3 -->
+<h3>Exercise 1.3</h3>
+<p>To show how Angular automatically updates the view, if any values used in expressions change, we added a
+	<code>now</code> variable, that contains the current date and time and is uptaded every second. Use interpolations
+	to show the current date and time and watch as it updates every second.</p>
+<!-- Insert Answer for Exercise 1.3 -->
+<div class="exercise">
+	Current date and time:
+	<!---Current Date and Time Here-->
+</div>
+
+<!-- Section 2 -->
+
+<h2>2. Property Binding</h2>
+
+<h3>Exercise 2.1</h3>
+<p>We have an <code>image</code> object, that contains a <code>title</code> and <code>url</code> property. Change the
+	below code to display the image from the url dynamically using property binding. </p>
+
+<div class="exercise">
+	Image Title: {{image.title}}
+	<!-- Uncomment the row below and add the "src" attribute with property binding to  the image.url variable -->
+	<!-- <img /> -->
+</div>
+
+<h2>Exercise 2.2</h2>
+<p>For this exercise we have an array with offers (<code>offers</code>). Some of the offers in this array are special
+	offers and as such marked by an attribute <code>specialOffer = true</code>. For special offers a css class was
+	created, that marks special offers in orange. Use property binding to bind the class <code>special-offer</code> to
+	each of the offer elements, if relevant.</p>
+
+<div class="exercise">
+	<!-- Exercise 2.2 Add Property binding to class.special-offer to each of the divs below.-->
+	<h4>Current Offers:</h4>
+	<div>{{offers[0].name}}</div>
+	<div>{{offers[1].name}}</div>
+	<div>{{offers[2].name}}</div>
+	<div>{{offers[3].name}}</div>
+	<div>{{offers[4].name}}</div>
+</div>
+
+<h3>Exercise 2.3</h3>
+<p>In this exercise we want to try out passing a variable to a custom component. This app already contains the
+	<code>hello.component.ts</code>. Enable property binding for the <code>name</code> property in the custom component.
+	Then show the component in the space below and pass the <code>myName</code> property from the
+	<code>app.component</code> to it.</p>
+
+<div class="exercise">
+	<!-- Show the hello component and pass the myName variable. -->
+	Hello:
+</div>
+
+
+
+<!-- Section 3 -->
+<h2>3. Event Binding</h2>
+
+<h3>Exercise 3.1</h3>
+
+<p>In this exercise we want to bind the <code>onClick()</code> function to the <code>click</code> event on a button.
+	This will trigger it any time the button is clicked.</p>
+
+<div class="exercise">
+	<!-- Show the hello component and pass the myName variable. -->
+	<button>Click me!</button>
+</div>
+
+
+
+
+
+<!-- Section 4 -->
+<h2>4. Structural Directives</h2>
+<h3>Exercise 4.1 - NgIf</h3>
+
+<p>In this example we are given a button, which toggles a property <code>showDetails</code></p>
+<button (click)="showDetails=!showDetails">Toggle details</button>
+
+<p>Feel free to try it out. The result should be shown here: showDetails = {{showDetails}}</p>
+
+<div class="exercise">
+	<!-- Allow users to toggle the following paragraph using *ngIf  -->
+	<p>Did you ever hear the tragedy of Darth Plagueis the Wise?
+		I thought not. It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of
+		the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life... He had
+		such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of
+		the Force is a pathway to many abilities some consider to be unnatural. He became so powerful... the only thing
+		he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his
+		apprentice everything he knew, then his apprentice killed him in his sleep. Ironic, he could save others from
+		death, but not himself.
+	</p>
+</div>
+
+
+<h3>Exercise 4.2 - NgFor</h3>
+
+<p>We reuse the array of offers from Exercise 2 (<code>offers</code>). Below you can find an unordered list
+	(<code>ul</code>). It currently contains a list item (<code>li</code>) with the first item (<code>[0]</code>) from
+	the array. Use ngFor to iterate this list item for every offer in the array.</p>
+
+<div class="exercise">
+	<!-- Exercise 2.2 Add Property binding to class.special-offer to each of the divs below.-->
+	<h4>Current Offers:</h4>
+	<ul>
+		<li>{{offers[0].name}}: {{offers[0].specialOffer}}</li>
+	</ul>
+
+</div>
+
+
+
+<!-- Section 4 -->
+<h2>5. Pipes</h2>
+<h3>Exercise 5.1 - Built-in pipes</h3>
+
+<p>In this example we are going to use a few built-in pipes to modify how some values are rendered in the DOM. In
+	exercise 1.3 you used expressions to show the variable <code>now</code>. Here we ask you to again use an expression,
+	but this time to combine the variable with a the date pipe to show three alternative views of the variable:</p>
+<!-- <ul>
+  <li>formatted date according to locale (pipe without parameters)</li>
+  <li>the weekday of the date</li>
+
+</ul> -->
+
+
+<div class="exercise">
+	<!-- Allow users to toggle the following paragraph using *ngIf  -->
+	{{now | date}}
+</div>
+
+
+<h3>Exercise 4.2 - NgFor</h3>
+
+<p>We reuse the array of offers from Exercise 2 (<code>offers</code>). Below you can find an unordered list
+	(<code>ul</code>). It currently contains a list item (<code>li</code>) with the first item (<code>[0]</code>) from
+	the array. Use ngFor to iterate this list item for every offer in the array.</p>
+
+<div class="exercise">
+	<!-- Exercise 2.2 Add Property binding to class.special-offer to each of the divs below.-->
+	<h4>Current Offers:</h4>
+	<ul>
+		<li>{{offers[0].name}}: {{offers[0].specialOffer}}</li>
+	</ul>
+
+</div>

@@ -1,0 +1,12 @@
+p {
+}
+
+.exercise {
+  padding: 10px;
+  background-color: rgba(57, 163, 212, 0.534);
+  border-radius: 10px;
+}
+
+.special-offer {
+  background-color: orange;
+}
