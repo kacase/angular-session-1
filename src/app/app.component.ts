@@ -1,4 +1,4 @@
-import { Component, VERSION } from "@angular/core";
+import { Component } from "@angular/core";
 
 @Component({
   selector: "my-app",
@@ -9,10 +9,10 @@ export class AppComponent {
   today = Date.now();
 
   // Exercise 1.1
-  currentUser: String = "Mr. Pink";
+  currentUser: string = "Mr. Pink";
 
   // Exercise 1.2
-  countInBasket: Number = 4;
+  countInBasket: number = 4;
   getStock() {
     return 13;
   }

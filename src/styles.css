@@ -320,3 +320,7 @@ button {
   padding: 0.5em;
   border-radius: 0.25em;
 }
+
+code {
+  color: #4ec9b0;
+}
